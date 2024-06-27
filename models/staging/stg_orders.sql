@@ -6,10 +6,12 @@ a.shipmode,
 a.ordersellingprice-a.ordercostprice as orderprofit,
 a.ordercostprice,
 a.ordersellingprice,
+c.customerid,
 c.customername,
 c.segment,
 c.country,
 b.category,
+b.productid,
 b.productname,
 b.subcategory
 from {{ ref('raw_orders') }} as a
